@@ -13,35 +13,10 @@
     <h3>This page will spit out a random weapon from Dungons and Dragons 5th edition for a npc or player character.</h3>
     <div class="inputBox">
         <form>
-            <label for="class">Specify a class: </label>
-            <select id="class" name="class">
-                <option value='random'>Random</option>
-                <option value="barbarian">Barbarian</option>
-                <option value="bard">Bard</option>
-                <option value="cleric">cleric</option>
-                <option value="druid">Druid</option>
-                <option value="fighter">Fighter</option>
-                <option value="monk">Monk</option>
-                <option value="paladin">Paladin</option>
-                <option value="ranger">Ranger</option>
-                <option value="rogue">Rogue</option>
-                <option value="sorceror">Sorceror</option>
-                <option value="warlock">Warlock</option>
-                <option value="wizard">Wizard</option>
-            </select>
-            <br>
-            <label for='type'>Specifiy a type:</label>
-            <select id='type' name='type'>
-                    <option value="random">Random</option>
-                    <option value="ranged">Ranged</option>
-                    <option value="ranged">Melee</option>
-            </select>
-            <br>
-            <label for="magic">Should the item be magical?</label>
-            <select id='magic' name="magic">
-                    <option value="random">Random</option>
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
+            <label for="magicOption">Should the item be magical?</label>
+            <select id='magicOption' name="magic">
+                    <option id= 'yes' value="1">Yes</option>
+                    <option id = 'no' value="2">No</option>
             </select>
             <br>
             <button class="submitButton">Bring me my weapon!</button>
@@ -50,22 +25,8 @@
     <div class="outputBox">
         <section>
             <h3>Random Weapon:</h3>
-            <h6>sample list</h6>
-            <ul>
-                <label for="name">name: </label>
-                <li class="name">Short Sword</li>
-                <label for="category">Weapon Category: </label>
-                <li class="category">Martial</li>
-                <label for="range">Weapon Range: </label>
-                <li class="range">Melee, 5</li>
-                <label for="cost">Cost: </label>
-                <li class="cost">10 GP</li>
-                <label for="damage">Damage: :</label>
-                <li class="damage">1d6</li>
-                <label for="damage-type">Damage Type: </label>
-                <li class="damage-type">Piercing</li>
-                <label for="weight">Weight: </label>
-                <li class="weight">2</li>
+            <ul class="putHere">
+
             </ul>
         </section>
     </div>
