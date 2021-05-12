@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Raleway&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css">
     <title>D&D 5e Weapon Generator</title>
 </head>
+
 <body>
-    <h1>Welcome!</h1>
-    <h3>This page will spit out a random weapon from Dungons and Dragons 5th edition for a npc or player character.</h3>
+    <header>
+        <h1>D<i class="fab fa-d-and-d"></i>D 5e Weapon Generator <i class="fas fa-dice-d20"></i> </h1>
+    </header>
+    <div id='background'>
+    <div class="wrapper">
+        <div class="welcomeText">
+            <h1 class="welcome">Welcome!</h1>
+            <h3>This page will spit out a random weapon from Dungons and Dragons 5th edition for a npc or player
+                character.
+            </h3>
+        </div>
+    </div>
     <div class="inputBox">
         <form>
             <label for="magicOption">Should the item be magical?</label>
             <select id='magicOption' name="magic">
-                    <option id= 'yes' value="1">Yes</option>
-                    <option id = 'no' value="2">No</option>
+                <option id='yes' value="1">Yes</option>
+                <option id='no' value="2">No</option>
             </select>
             <br>
             <button class="submitButton">Bring me my weapon!</button>
@@ -24,15 +37,22 @@
     </div>
     <div class="outputBox">
         <section>
-            <h3>Random Weapon:</h3>
+            <h3>Your Weapon:</h3>
+            <!-- <button id="anotherButton">Bring me another!</button> -->
             <ul class="putHere">
 
             </ul>
         </section>
     </div>
-
+</div>
+<!-- something like scripts -->
     <script src="script.js">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/63088848de.js" crossorigin="anonymous"></script>
 </body>
+<footer>
+    <p>Created by Chase Malcom</p>
+    <p>Copyright &copy 2021</p>
+</footer>
+
 </html>
