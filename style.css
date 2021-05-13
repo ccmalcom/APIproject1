@@ -5,14 +5,18 @@ html{
 header{
     font-family: 'Marcellus SC', serif;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     background-color: #87010C; 
     color: antiquewhite;
     z-index: 1;
     width: auto;
     height: 88px;
     letter-spacing: 2.5px;
+}
+
+header h1{
+    text-align: center;
 }
 
 .welcome{
@@ -31,7 +35,7 @@ body{
 }
 
 #background{
-    z-index: 1;
+    z-index: 0;
     height: 100vh;
     background-image: url(https://pbs.twimg.com/media/DbP0Cd8U0AEpB2I?format=jpg&name=large);
     background-position: center;
