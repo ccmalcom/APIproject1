@@ -8,7 +8,8 @@ const isMagic = document.querySelector('#magicOption');
 const outputBox = document.querySelector('section');
 // const anotherBtn = document.querySelector('#anotherButton');
 let submitBtn = document.querySelector('form');
-
+let dataBox = document.querySelector('.info')
+dataBox.style.display = ('none')
 
 submitBtn.addEventListener('submit', returnWeapon);
 // anotherBtn.addEventListener('click', returnWeapon)
@@ -43,28 +44,30 @@ function returnWeapon(e) {
 
 //display magic weapon details
 function displayMagicResults(json) {
+    dataBox.style.display = ('block')
     while (weaponInfo.firstChild) {
         weaponInfo.removeChild(weaponInfo.firstChild);
     }
     let weaponName = document.createElement('li');
     weaponName.innerHTML = '<p>' + '<b>' + 'Name: ' + '</b>' + json.name + '</p>';
     weaponInfo.appendChild(weaponName);
-
+    
     let weaponType = document.createElement('li');
     weaponType.innerHTML = '<p>' + '<b>' + 'Type: ' + '</b>' + json.desc[0] + '</p>';
     weaponInfo.appendChild(weaponType);
-
+    
     for (i = 1; i < json.desc.length; i++) {
-
+        
         let weaponDesc = document.createElement('li');
         weaponDesc.innerHTML = '<p>' + '<b>' + 'Feature: ' + '</b>' + json.desc[i] + '</p>';
         weaponInfo.appendChild(weaponDesc);
     }
-
+    
 }
 
 //display regular weapon results
 function displayRegResults(json) {
+    dataBox.style.display = ('block')
     while (weaponInfo.firstChild) {
         weaponInfo.removeChild(weaponInfo.firstChild);
     }
