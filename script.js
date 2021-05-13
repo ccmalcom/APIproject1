@@ -3,24 +3,12 @@ let magicWeaponURL = ["/api/magic-items/vorpal-sword", "/api/magic-items/vicious
 
 let regularWeaponURL = ["/api/equipment/net", "/api/equipment/longbow", "/api/equipment/crossbow-heavy", "/api/equipment/crossbow-hand", "/api/equipment/blowgun", "/api/equipment/whip", "/api/equipment/warhammer", "/api/equipment/war-pick", "/api/equipment/trident", "/api/equipment/shortsword", "/api/equipment/scimitar", "/api/equipment/rapier", "/api/equipment/pike", "/api/equipment/morningstar", "/api/equipment/maul", "/api/equipment/longsword", "/api/equipment/lance", "/api/equipment/halberd", "/api/equipment/greatsword", "/api/equipment/greataxe", "/api/equipment/glaive", "/api/equipment/flail", "/api/equipment/battleaxe", "/api/equipment/sling", "/api/equipment/shortbow", "/api/equipment/dart", "/api/equipment/crossbow-light", "/api/equipment/spear", "/api/equipment/sickle", "/api/equipment/quarterstaff", "/api/equipment/mace", "/api/equipment/light-hammer", "/api/equipment/javelin", "/api/equipment/handaxe", "/api/equipment/greatclub", "/api/equipment/dagger", "/api/equipment/club"];
 
-
 let weaponInfo = document.querySelector('.putHere');
 const isMagic = document.querySelector('#magicOption');
 const outputBox = document.querySelector('section');
 // const anotherBtn = document.querySelector('#anotherButton');
 let submitBtn = document.querySelector('form');
 
-//pull random url from array
-// function getRandom(e){
-//     e.preventDefault();
-// let randomMagicWeapon = magicWeaponURL[Math.floor(Math.random()*magicWeaponURL.length)]
-// console.log(randomMagicWeapon);
-
-// let randomRegWeapon = regularWeaponURL[Math.floor(Math.random()*regularWeaponURL.length)]
-// console.log(randomRegWeapon);
-
-// returnWeapon(e);
-// }
 
 submitBtn.addEventListener('submit', returnWeapon);
 // anotherBtn.addEventListener('click', returnWeapon)
