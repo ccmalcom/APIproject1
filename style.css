@@ -39,8 +39,6 @@ body{
     height: 100vh;
     background-image: url(https://pbs.twimg.com/media/DbP0Cd8U0AEpB2I?format=jpg&name=large);
     background-position: center;
-    /* background-repeat: repeat-y; */
-    background-size: cover;
 }
 
 #background::before{
