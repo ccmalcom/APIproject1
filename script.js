@@ -1,4 +1,3 @@
-dataBox.style.display = ('none')
 const apiURL = 'https://www.dnd5eapi.co';
 let magicWeaponURL = ["/api/magic-items/vorpal-sword", "/api/magic-items/vicious-weapon", "/api/magic-items/trident-of-fish-command", "/api/magic-items/sword-of-wounding", "/api/magic-items/sword-of-sharpness", "/api/magic-items/sword-of-life-stealing", "/api/magic-items/sun-blade", "/api/magic-items/scimitar-of-speed", "/api/magic-items/oathbow", "/api/magic-items/nine-lives-stealer", "/api/magic-items/mace-of-terror", "/api/magic-items/mace-of-smiting", "/api/magic-items/mace-of-disruption", "/api/magic-items/luck-blade", "/api/magic-items/javelin-of-lightning", "/api/magic-items/holy-avenger", "/api/magic-items/hammer-of-thunderbolts", "/api/magic-items/giant-slayer", "/api/magic-items/frost-brand", "/api/magic-items/flame-tongue", "/api/magic-items/dwarven-thrower", "/api/magic-items/dragon-slayer", "/api/magic-items/defender", "/api/magic-items/dancing-sword", "/api/magic-items/dagger-of-venom", "/api/magic-items/berserker-axe"];
 
@@ -10,6 +9,7 @@ const outputBox = document.querySelector('section');
 // const anotherBtn = document.querySelector('#anotherButton');
 let submitBtn = document.querySelector('form');
 let dataBox = document.querySelector('.info')
+dataBox.style.display = ('none')
 
 submitBtn.addEventListener('submit', returnWeapon);
 // anotherBtn.addEventListener('click', returnWeapon)
